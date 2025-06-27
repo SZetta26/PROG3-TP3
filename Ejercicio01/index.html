@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <h1>CALCULADORA BASICA</h1>
+        <label>Ingrese primer numero: </label> <input id="num01" type="number">
+        <br>
+        <label>Ingrese segundo numero: </label> <input id="num02" type="number">
+        <br><br>
+        <label for="operaciones">Seleccione la operacion a realizar: </label>
+        <select name="operaciones" id="operaciones">
+            <option value="SUMA">Suma</option>
+            <option value="RESTA">Resta</option>
+            <option value="MULT">Multiplicacion</option>
+            <option value="DIV">Division</option>
+        </select>
+        <button id="boton" type="button" onclick="takeValue()">CALCULAR!</button>
+        <br><br>
+
+        
+    </form>
+
+    <h2 id="resultado" style="font-style: bold;"></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
