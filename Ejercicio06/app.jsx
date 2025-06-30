@@ -32,6 +32,7 @@ function App() {
   }
   return (
     <>
+      <form>
       <h2>CALCULADORA IMC</h2>
       <label>
         Ingrese su peso (en Kilogramos):
@@ -50,8 +51,10 @@ function App() {
           onChange={e => setAltura(Number(e.target.value))}/>
       </label>
         <br /><br /><br/>
-      <button 
+      <button type="button"
         onClick={calcular}>CALCULAR</button>
+      </form>
+
 
       {resultado !== null && (
         <h2>Resultado: {resultado}</h2>

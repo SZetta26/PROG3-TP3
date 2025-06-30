@@ -22,6 +22,7 @@ function App() {
 
   return (
     <>
+      <form >
       <h2>CALCULADORA BÁSICA (REACT)</h2>
       <label>
         Ingrese primer numero:
@@ -50,10 +51,10 @@ function App() {
           <option value="DIV">Division</option>
         </select>
       </label>
-
-      <button 
+      <button type="button" 
         onClick={calcular}
         disabled={!noCalcular}>CALCULAR</button>
+      </form>
 
       {resultado !== null && (
         <h2>Resultado: {resultado}</h2>
